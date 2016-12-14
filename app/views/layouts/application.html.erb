@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Taski</title>
+   <%= csrf_meta_tags %>
+
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+ </head>
+	<body>
+		<div class="logo">
+			<%= image_tag("logos/s-h-i-e-l-d-logo-F89847BD30-seeklogo.com.gif", width: '100px')%>
+		</div>
+
+		<%= render "shared/nav" %>
+		<%= render "shared/alerts" %>
+
+   <%= yield %>
+  </body>
+</html>
